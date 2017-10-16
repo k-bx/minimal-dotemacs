@@ -1,0 +1,7 @@
+(source gnu)
+(source marmalade)
+(source melpa)
+(depends-on "flycheck")
+(depends-on "haskell-mode")
+(depends-on "intero")
+(depends-on "projectile")
