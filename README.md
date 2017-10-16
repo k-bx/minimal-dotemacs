@@ -12,7 +12,7 @@ get "good enough" comfort for working as quickly as possible.
 
 ```
 # 1. Clone the repo
-https://github.com/k-bx/minimal-dotemacs.git
+git clone https://github.com/k-bx/minimal-dotemacs.git
 # 2. Link `.emacs` and Caskfile
 ln -s $(pwd)/minimal-dotemacs/dotemacs.el $HOME/.emacs
 mkdir -p $HOME/.emacs.d
