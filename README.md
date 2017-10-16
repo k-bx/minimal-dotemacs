@@ -20,9 +20,10 @@ stack install --resolver nightly hasktags hindent
 # 1. Clone the repo
 git clone https://github.com/k-bx/minimal-dotemacs.git
 # 2. Link `.emacs` and Caskfile
+rm ~/.emacs
 ln -s $(pwd)/minimal-dotemacs/dotemacs.el $HOME/.emacs
-mkdir -p $HOME/.emacs.d
-ln -s $(pwd)/minimal-dotemacs/Cask $HOME/.emacs.d/Cask
+rm -rf ~/.emacs.d
+ln -s $(pwd)/minimal-dotemacs/dotemacs $HOME/.emacs.d
 # 3. Because of the certificate issues, launch emacs via `emacs -q`,
 # open `~/.emacs`, eval these:
 #     (require 'package)
